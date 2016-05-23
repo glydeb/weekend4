@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  $('#ui-datepicker-div').css('display', 'none');
+
   // load existing tasks
   $.get('/tasks', getTasks);
 
@@ -12,9 +14,10 @@ $(document).ready(function () {
   // submit task button
   $('#submit-task').on('click', postTask);
 
-  // completed task and delete task buttons
+  // completed task, clone and delete task buttons
   $('#container').on('click', '.delete', deleteTask);
   $('#container').on('click', '.completed', completedTask);
+  $('#container').on('click', '.clone', cloneTask);
 
   // reveal and hide the task descriptions
   $('#container').on('mouseenter', '.task', revealDesc);
@@ -43,8 +46,23 @@ function hideDesc() {
   $(this).text('Hold description open').removeClass('hide').addClass('hold');
 }
 
+function cloneTask() {
+  var taskID = $(this).parent().parent().data('taskID');
+  $.ajax({
+    type: 'GET',
+    url: '/clone/' + taskID,
+    success: fillTaskInputs,
+  });
+
+}
+
+function fillTaskInputs(task) {
+  $('form').children('#task_name').val(task[0].name);
+  $('form').children('textarea').val(task[0].description);
+}
+
 function completedTask() {
-  var taskID = $(this).parent().data('taskID');
+  var taskID = $(this).parent().parent().data('taskID');
   $.ajax({
     type: 'PUT',
     url: '/tasks',

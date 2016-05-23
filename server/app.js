@@ -3,11 +3,13 @@ var app = express();
 var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
+var clone = require('./routes/clone');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Routes
 app.use('/tasks', tasks);
+app.use('/clone', clone);
 
 app.use('/', index);
 
