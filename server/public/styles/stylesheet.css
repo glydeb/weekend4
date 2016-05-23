@@ -1,0 +1,116 @@
+header {
+  margin: 20px 40px 0 20px;
+  border-bottom: 3px solid #78502B;
+}
+
+body {
+  color: #333;
+}
+
+button {
+  float: right;
+}
+
+main {
+  width: 80%;
+  margin-right: 0;
+  display: inline-block;
+}
+
+aside {
+  width: 30%;
+}
+
+h1 {
+  color: #311A0A;
+  display: block;
+}
+
+.complete {
+  background-color: #1BB;
+}
+
+.hidden {
+  display: none;
+}
+
+.ui-datepicker {
+  background-color: #EEE;
+}
+
+.ui-datepicker-header {
+  height: 2em;
+  margin: 3px 3px 0 3px;
+  padding: 4px 4px 0 4px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.ui-datepicker-prev {
+  padding: 3px;
+  background-color: #CCC;
+  border: 1px solid black;
+  border-radius: 13%;
+  float: left;
+}
+
+.ui-datepicker-next {
+  padding: 3px;
+  background-color: #CCC;
+  border: 1px solid black;
+  border-radius: 13%;
+  float: right;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+  padding-top: 1em;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.ui-datepicker-calendar {
+  margin: 0 3px 3px 3px;
+  padding: 0 4px 4px 4px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#ui-datepicker-div td  {
+  background-color: #CCC;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center;
+}
+
+#ui-datepicker-div a  {
+  text-decoration: none;
+  color: #333;
+}
+
+form {
+  margin: 20px 0;
+  width: 730px;
+  height: 60px;
+}
+
+label, input{
+  margin: 4px 0;
+}
+
+#container {
+  margin: 10px 40px 10px 20px;
+}
+
+aside {
+/*  float: right;
+  text-align: right;
+  position: relative;
+  top: -27px; */
+}
+
+h2 {
+  margin-bottom: 5px;
+}

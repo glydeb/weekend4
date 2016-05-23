@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="../styles/stylesheet.css"/>
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/jquery-ui.min.js"></script>
+    <script src="../scripts/clientapp.js"></script>
+  </head>
+  <body>
+    <h1>To-Do list</h1>
+    <main>
+      <h2>Current Task List</h2>
+      <div id="container"></div>
+    </main>
+    <aside>
+    <form id="add-task">
+      <h2>Add a new task</h2>
+      <label for="task_name">Task Name:</label>
+      <input type="text" id="task_name" name="task_name">
+      <label for="datepicker">Due Date:</label>
+      <input type="date" id="datepicker" name="due_date" />
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="8" cols="50"></textarea>
+      <button id="submit-task">Add Task</button>
+    </form>
+
+    </aside>
+  </body>
+</html>

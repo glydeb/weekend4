@@ -1,0 +1,25 @@
+{
+  "name": "weekend4",
+  "version": "1.0.0",
+  "description": "to-do app homework for weekend 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glydeb/weekend4.git"
+  },
+  "author": "Glydewell Burdick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glydeb/weekend4/issues"
+  },
+  "homepage": "https://github.com/glydeb/weekend4#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "pg": "^4.5.5"
+  }
+}
